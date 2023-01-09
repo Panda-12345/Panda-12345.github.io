@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400&display=swap');
+
+/*font-awesomeの読み込み*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+/* cssファイルの読み込み*/
+@import url("animation.css");
+@import url("slide.css");
+
+
+
+
+section+section {
+    padding-top: 50px;
+    /*sectionの間に空けるスペース*/
+}
+
+img {
+    border: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a:hover {
+    opacity: 0.8;
+    /*マウスを当てた時に60%の透明度にする*/
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; 
+  font-family: 'M PLUS 1p',sans-serif;
+  /*初期設定*/
+}
+
+header {
+    height: 100px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    color: white;
+}
+
+#header-icon {
+    font-size: 30px;
+    margin-left: auto;
+
+}
+
+#header-icon i {
+    padding: 5px;
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    flex: 1 1 10%;
+    height: 1220px;
+    min-width: 200px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    /*menu bar 固定*/
+}
+
+#news  a {
+    color: white;
+    display: flex;
+    padding-bottom: 600px;
+    font-size: 20px
+
+}
+main {
+    flex: 1 1 90%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    padding-left: 100px;
+    padding-top: 35px;
+} 
+
+main h1{
+    color: white;
+}
+.bar h2 {
+    color: white;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: normal;
+    border-bottom: 4px solid #eee;
+    /*下線の幅、線種、色。ベースカラー。*/
+}
+
+/*mainブロック内のh2タグの下線。*/
+.bar h2 span.uline {
+    display: inline-block;
+    position: relative;
+    border-bottom: 4px solid #fff;
+    /*下線の幅、線種、色。アクセントカラー。上のmain h2と数字を合わせておく。*/
+    bottom: -4px;
+    /*下からの配置場所指定。*/
+    padding: 0 20px;
+    /*上下、左右への余白。。*/
+}
+
+main h3{
+    color: white;
+    padding: 40px;
+}
+main p {
+    color: white;
+    padding: 50px;
+}
+
+nav li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 60px;
+    padding-left: 40px;
+    color: white;
+    transition: 0.3s;
+}
+nav li:hover a {
+    padding-left: 30px; /*動くやつ*/
+}
+
+.list-container {
+    display: flex;
+    /*flexボックスを使う指定*/
+    flex-wrap: wrap;
+    /*折り返す指定*/
+    justify-content: space-between;
+    /*並びかたの種類の指定*/
+}
+
+/*１個あたりのボックス設定*/
+.list {
+    width: 48%;
+    /*幅*/
+    margin-bottom: 30px;
+    /*ボックス同士のスペース*/
+    padding: 20px;
+    background: #fff;
+    color: #999;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*ボックス内のh4タグ*/
+.list h4 {
+    margin: 10px 0;
+    /*余白*/
+    color: #666;
+}
+
+.list h4 a {
+    color: #666;
+    padding: 10px;
+}
+
+/*ボックス内のpタグ*/
+.list p {
+    margin: 0;
+    font-size: 1.5em;/*文字サイズを80%に*/
+    color: black;
+
+}
+
+.newsp1 img {
+    padding: 10px
+}
+
+.newsp1 {
+    color: white;
+}
+
+.newsp1 h1 {
+    padding: 30px 0;
+}
+
+.newsp1 h2{
+}
+
+.newsp1 h3 {
+    padding: 0px;
+}
+
+.newsp1 li {
+    padding: 10px 0;
+    width: 600px
+
+}
+
+.policyimg {
+    padding-top: 10px;
+    max-width: 100%;
+    max-height: 90%;
+}
+footer {
+    height: 50px;
+    background: black;
+    padding: 20px;
+}
+
+footer small {
+    font-size: 100%;
+}
+
+footer {
+    font-size: 0.6rem;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/*リンクテキストのマウスオン時*/
+footer a:hover {
+    color: white;
+}
+
+/*著作部分*/
+footer .pr {
+    display: block;
+}
